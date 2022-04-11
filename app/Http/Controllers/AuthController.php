@@ -26,6 +26,7 @@ class AuthController extends Controller
         /** changed standard laravel token for work guards api and web
             $token = auth()->attempt($credentials)
          */
+
         $token = auth()->guard('api')->attempt($credentials); // new
 
         if (!$token) {
