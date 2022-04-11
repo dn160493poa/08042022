@@ -18,6 +18,7 @@ class AdminPanelMiddleware
     {
         $auth = auth()->user();
         if(isset($auth)){
+            //dd($request);
             return $next($request);
         };
         return redirect()->route('home');

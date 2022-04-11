@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Post\IndexController;
 
 class HomeController extends Controller
 {
@@ -19,12 +19,11 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @return \Illuminate\Contracts\Support\Renderable|\Illuminate\Http\RedirectResponse
      */
     public function index()
     {
-
-        //dd('home');
-        return view('home');
+        return redirect()->action([IndexController::class]);
+        //return view('home');
     }
 }

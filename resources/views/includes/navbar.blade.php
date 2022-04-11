@@ -11,17 +11,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav me-auto">
-                <li>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </li>
-            </ul>
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav me-auto">
+                    <li>
+                        <form class="d-flex" action="{{url()->current()}}" method="get">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value="" name="search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
                 <!-- Authentication Links -->
                 @guest
                     @if (Route::has('login'))

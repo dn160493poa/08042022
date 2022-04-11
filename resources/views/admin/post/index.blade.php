@@ -3,6 +3,7 @@
 @section('content')
     <div>
         <div>
+            <a href="{{ route('post.index') }}" class="btn btn-secondary mb-3">Back to Posts</a>
             <a href="{{ route('admin.post.create') }}" class="btn btn-primary mb-3">Add one</a>
         </div>
         @foreach($posts as $post)

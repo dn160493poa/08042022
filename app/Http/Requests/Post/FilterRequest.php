@@ -27,7 +27,8 @@ class FilterRequest extends FormRequest
             'title' => 'string',
             'content' => 'string',
             'image' => 'string',
-            'categories' => ''
+            'categories' => '',
+            'search' => 'string'
         ];
     }
 }
