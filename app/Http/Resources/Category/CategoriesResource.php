@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Resources\Post;
+namespace App\Http\Resources\Category;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class PostsResource extends ResourceCollection
+class CategoriesResource extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
